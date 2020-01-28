@@ -56,7 +56,7 @@ Public Sub ExportVisualBasicCode()
     
    Application.StatusBar = "Successfully exported " & CStr(count) & " VBA files to " & directory
    'Application.OnTime Now + TimeSerial(0, 0, 10), "ClearStatusBar"
-   MsgBox "Done Exporting"
+   MsgBox "Done Exporting Modules to ./VisualBasic/"
 End Sub
 
 Sub ImportCodeModules()

@@ -13,9 +13,9 @@ ImportCodeModules
 
 End Sub
 
-Private Sub Workbook_BeforeSave(ByVal SaveAsUI As Boolean, Cancel As Boolean)
-
-ExportVisualBasicCode
+Private Sub Workbook_BeforeClose(Cancel As Boolean)
+  If Me.Saved = False Then Me.Save
+    ExportVisualBasicCode
 
 End Sub
 
